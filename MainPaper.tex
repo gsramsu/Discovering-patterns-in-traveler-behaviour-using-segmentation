@@ -7,6 +7,41 @@ Current revenue management practice in most airlines involves demand segmentatio
 
 In this section, we motivate the paper by providing some context to why segmentation matters, what we want to accomplish and what has currently been done. Literature survey will be a subsection here, so that the context of this work is set.
 
+\subsection{Some intro text}
+
+Segmentation is a way of understanding the behavior of customers in such a way that we are aware of both their diversity and their commonalities. The idea is to find certain behavioral patterns followed by groups of customers, and understand the overall behavior in terms of these groups. These groups are referred to as segments. 
+
+This is a fairly well-understood concept in marketing and within the airline industry as well. However, it is more often than not done using more qualitative methods, or with data collected using surveys. The survey approach is certainly useful and allows marketers to collect fine-grained information and specific answers to questions relating to their behavior and preferences. However, in the context of application to the airline domain, where we wish to assign each customer to a segment, its insights might not be easy to apply in a systematic manner. 
+
+The alternative is to take a data-driven approach, wherein we look at archived data which contains explicit information about customer behavior and implicit information about their preferences. We can then try and find intuitive groups within this data and codify our insights into an algorithm that allows us to automatically assign new data points into the groups thus discovered.
+
+A one-line summary of what we are trying to achieve is as follows: \textit{A meaningful grouping of entities to enable focused business decisions}. The reason why we use the word \textit{entities} instead of \textit{customers} is as follows: We can observe, characterize and understand customers at various levels. 
+
+At a very granular level, we can observe their behavior in a particular flight segment – just consider what we know from the time when a traveler boards a flight to when he gets off of it. We can, however, get more meaningful insights as we go up the chain to understand where the customer is going, and whether this flight is part of an O&D. A little further up, we can characterize and understand the entire trip (insofar as we can observe it within the same PNR). We can go even further and characterize the entire relationship that the airline has with a particular customer, to the extent that his multiple trips can be observed and connected as being made by him. At this level, we can consider not only his travel behavior in the past, but also any travel preferences and other information that he might have provided, e.g. as part of a frequent flyer program.
+
+The level at which we collate, characterize and act upon the data is also linked to the window of interaction we might have with the customer, or the decision-making context. 
+
+This brings us to the term \textit{meaningful grouping}. We wish to arrive as distinct groups of similar entities, but how do we know we have a good set of groups? There is, after all, no fundamental, objectively verified truth that tells us what the correct groups in the data are. 
+
+This can be done in many ways: 
+
+Firstly, we want the behavior within the group to be somewhat similar, and the groups themselves to be somewhat distinct from each other. 
+
+Secondly, we want to be able to verify the grouping against our own intuition about the customer base: sometimes, the data might throw up something we did not expect, but if it is intuitive in hindsight and verifiable against what we know about our customers, it is still okay. 
+
+Lastly, the grouping needs to be relevant to the decision-making context. For instance, if we are trying to make decisions at the shopping stage and wish to use customer segmentation as one of the drivers for our decision making, then the information we have at our disposal is what is available at that point. If, on the other hand, we are trying to decide whether we can sell an ancillary to the customer during the wait stage, or during check-in, we have a lot more information available, and our definition of segments can be a lot more nuanced.
+
+This brings us to how we could make decisions using this meaningful grouping of entities that we have arrived at. 
+
+\begin{description}
+\item[Descriptive] At a basic level, it is useful to understand behavior at a group level, or maybe between groups. For instance, do two markets break up into groups in very different ways, ascompared to what we expected? Or, does a particular group respond very differently as compared to another with respect to a decision/promotion? 
+
+\item[Predictive] Once we understand this, we can then hypothesize how a particular subset of customers might react to a proposed decision/promotion. 
+
+\item[Prescriptive] We can then extrapolate our understanding to the point of designing optimal 
+decisions.
+\end{description}
+
 \subsection{Literature survey}
 \label{sec:lit}
 
@@ -55,6 +90,7 @@ Describe results on airline data in a depersonalized form.
 
 What else can we do?
 
+  
   
   
   
